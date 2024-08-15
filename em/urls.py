@@ -20,7 +20,7 @@ from django.views.generic.base import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('main/',include('main.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
-    # path('',include('main.urls')),
     path('', TemplateView.as_view(template_name='main/home.html'), name='home'),
 ]
