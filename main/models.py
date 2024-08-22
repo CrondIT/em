@@ -8,6 +8,7 @@ class Events(models.Model):
     from_date = models.DateField('Дата начала')
     to_date = models.DateField('Дата окончания')
     creation_date = models.DateTimeField('Дата создания мероприятия')
+    
 
     def __str__(self):
         return self.title
